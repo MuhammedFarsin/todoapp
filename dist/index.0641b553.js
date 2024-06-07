@@ -2957,8 +2957,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
-var _todo = require("./components/Todo");
-var _todoDefault = parcelHelpers.interopDefault(_todo);
+var _todoEditForm = require("./components/TodoEditForm");
+var _todoEditFormDefault = parcelHelpers.interopDefault(_todoEditForm);
 var _todoWrapper = require("./components/TodoWrapper");
 var _todoWrapperDefault = parcelHelpers.interopDefault(_todoWrapper);
 var _body = require("./components/Body");
@@ -3000,7 +3000,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/Todo":"5M1Yq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/TodoWrapper":"55vIp","./components/Body":"hHUrP"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./components/TodoWrapper":"8fNPs","./components/Body":"hHUrP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./components/TodoEditForm":"adrsd"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27243,11 +27243,11 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"5M1Yq":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$26d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"8fNPs":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ee18 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$26d6.prelude(module);
+$parcel$ReactRefreshHelpers$ee18.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -27255,74 +27255,41 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactFontawesome = require("@fortawesome/react-fontawesome");
-var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
-const Todo = ({ task })=>{
+var _constants = require("../utils/constants");
+const TodoWrapper = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "todo-item",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                children: task
-            }, void 0, false, {
-                fileName: "src/components/Todo.jsx",
-                lineNumber: 8,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "todo-actions",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                        className: "fas fa-edit",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
-                            icon: (0, _freeSolidSvgIcons.faEdit)
-                        }, void 0, false, {
-                            fileName: "src/components/Todo.jsx",
-                            lineNumber: 11,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Todo.jsx",
-                        lineNumber: 10,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
-                        className: "fas fa-trash",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
-                            icon: (0, _freeSolidSvgIcons.faTrash)
-                        }, void 0, false, {
-                            fileName: "src/components/Todo.jsx",
-                            lineNumber: 14,
-                            columnNumber: 11
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/Todo.jsx",
-                        lineNumber: 13,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/Todo.jsx",
-                lineNumber: 9,
-                columnNumber: 7
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Todo.jsx",
-        lineNumber: 7,
+        className: "todo-wrapper",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+            className: "img-logo",
+            src: (0, _constants.LOGO_URL)
+        }, void 0, false, {
+            fileName: "src/components/TodoWrapper.jsx",
+            lineNumber: 9,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/TodoWrapper.jsx",
+        lineNumber: 8,
         columnNumber: 5
     }, undefined);
 };
-_c = Todo;
-exports.default = Todo;
+_c = TodoWrapper;
+exports.default = TodoWrapper;
 var _c;
-$RefreshReg$(_c, "Todo");
+$RefreshReg$(_c, "TodoWrapper");
 
-  $parcel$ReactRefreshHelpers$26d6.postlude(module);
+  $parcel$ReactRefreshHelpers$ee18.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../utils/constants":"hB8jg","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hB8jg":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
+const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu-PoDKsazxzc3IUxcx17ZpOy0EARw7M60Q&s";
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27490,7 +27457,379 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"clIT3":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"hHUrP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9ffe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$9ffe.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _todoForm = require("./TodoForm");
+var _todoFormDefault = parcelHelpers.interopDefault(_todoForm);
+var _uuid = require("uuid");
+var _todo = require("./Todo");
+var _todoDefault = parcelHelpers.interopDefault(_todo);
+var _todoEditForm = require("./TodoEditForm");
+var _todoEditFormDefault = parcelHelpers.interopDefault(_todoEditForm);
+var _s = $RefreshSig$();
+const Body = ()=>{
+    _s();
+    const [todos, setTodos] = (0, _react.useState)([]);
+    const addTodo = (todo)=>{
+        setTodos([
+            ...todos,
+            {
+                id: (0, _uuid.v4)(),
+                task: todo,
+                completed: false,
+                isEditing: false
+            }
+        ]);
+        console.log(todos);
+    };
+    const toggleComplete = (id)=>{
+        setTodos(todos.map((todo)=>todo.id === id ? {
+                ...todo,
+                completed: !todo.completed
+            } : todo));
+    };
+    const deleteTodo = (id)=>{
+        setTodos(todos.filter((todo)=>todo.id !== id));
+    };
+    const editTodo = (id)=>{
+        setTodos(todos.map((todo)=>todo.id === id ? {
+                ...todo,
+                isEditing: !todo.isEditing
+            } : todo));
+    };
+    const editTask = (task, id)=>{
+        setTodos(todos.map((todo)=>todo.id === id ? {
+                ...todo,
+                task,
+                isEditing: !todo.isEditing
+            } : todo));
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "body",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoFormDefault.default), {
+                addTodo: addTodo
+            }, void 0, false, {
+                fileName: "src/components/Body.jsx",
+                lineNumber: 61,
+                columnNumber: 7
+            }, undefined),
+            todos.map((todo)=>todo.isEditing ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoEditFormDefault.default), {
+                    editTodo: editTask,
+                    task: todo
+                }, void 0, false, {
+                    fileName: "src/components/Body.jsx",
+                    lineNumber: 64,
+                    columnNumber: 11
+                }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoDefault.default), {
+                    todo: todo,
+                    toggleComplete: toggleComplete,
+                    deleteTodo: deleteTodo,
+                    editTodo: editTodo
+                }, todo.id, false, {
+                    fileName: "src/components/Body.jsx",
+                    lineNumber: 66,
+                    columnNumber: 11
+                }, undefined))
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Body.jsx",
+        lineNumber: 60,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Body, "ZATHeV9x55jFrDOww2hwcxQ3V1U=");
+_c = Body;
+exports.default = Body;
+var _c;
+$RefreshReg$(_c, "Body");
+
+  $parcel$ReactRefreshHelpers$9ffe.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./TodoForm":"irp8y","uuid":"j4KJi","./Todo":"5M1Yq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./TodoEditForm":"adrsd"}],"irp8y":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ab55 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ab55.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const TodoForm = ({ addTodo })=>{
+    _s();
+    const [value, setValue] = (0, _react.useState)("");
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        addTodo(value);
+        setValue("");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+        className: "TodoForm",
+        onSubmit: handleSubmit,
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                type: "text",
+                className: "todo-input",
+                value: value,
+                placeholder: "what is the task for today?",
+                onChange: (e)=>setValue(e.target.value),
+                required: true
+            }, void 0, false, {
+                fileName: "src/components/TodoForm.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                type: "submit",
+                className: "submit-btn",
+                children: "Add Task"
+            }, void 0, false, {
+                fileName: "src/components/TodoForm.jsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/TodoForm.jsx",
+        lineNumber: 14,
+        columnNumber: 5
+    }, undefined);
+};
+_s(TodoForm, "dBtK6I2q1m3rcfzPBa0nrbv/iCI=");
+_c = TodoForm;
+exports.default = TodoForm;
+var _c;
+$RefreshReg$(_c, "TodoForm");
+
+  $parcel$ReactRefreshHelpers$ab55.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"j4KJi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "v1", ()=>(0, _v1JsDefault.default));
+parcelHelpers.export(exports, "v3", ()=>(0, _v3JsDefault.default));
+parcelHelpers.export(exports, "v4", ()=>(0, _v4JsDefault.default));
+parcelHelpers.export(exports, "v5", ()=>(0, _v5JsDefault.default));
+parcelHelpers.export(exports, "NIL", ()=>(0, _nilJsDefault.default));
+parcelHelpers.export(exports, "version", ()=>(0, _versionJsDefault.default));
+parcelHelpers.export(exports, "validate", ()=>(0, _validateJsDefault.default));
+parcelHelpers.export(exports, "stringify", ()=>(0, _stringifyJsDefault.default));
+parcelHelpers.export(exports, "parse", ()=>(0, _parseJsDefault.default));
+var _v1Js = require("./v1.js");
+var _v1JsDefault = parcelHelpers.interopDefault(_v1Js);
+var _v3Js = require("./v3.js");
+var _v3JsDefault = parcelHelpers.interopDefault(_v3Js);
+var _v4Js = require("./v4.js");
+var _v4JsDefault = parcelHelpers.interopDefault(_v4Js);
+var _v5Js = require("./v5.js");
+var _v5JsDefault = parcelHelpers.interopDefault(_v5Js);
+var _nilJs = require("./nil.js");
+var _nilJsDefault = parcelHelpers.interopDefault(_nilJs);
+var _versionJs = require("./version.js");
+var _versionJsDefault = parcelHelpers.interopDefault(_versionJs);
+var _validateJs = require("./validate.js");
+var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
+var _stringifyJs = require("./stringify.js");
+var _stringifyJsDefault = parcelHelpers.interopDefault(_stringifyJs);
+var _parseJs = require("./parse.js");
+var _parseJsDefault = parcelHelpers.interopDefault(_parseJs);
+
+},{"./v1.js":false,"./v3.js":false,"./v4.js":"8zJtu","./v5.js":false,"./nil.js":false,"./version.js":false,"./validate.js":false,"./stringify.js":false,"./parse.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8zJtu":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _nativeJs = require("./native.js");
+var _nativeJsDefault = parcelHelpers.interopDefault(_nativeJs);
+var _rngJs = require("./rng.js");
+var _rngJsDefault = parcelHelpers.interopDefault(_rngJs);
+var _stringifyJs = require("./stringify.js");
+function v4(options, buf, offset) {
+    if ((0, _nativeJsDefault.default).randomUUID && !buf && !options) return (0, _nativeJsDefault.default).randomUUID();
+    options = options || {};
+    const rnds = options.random || (options.rng || (0, _rngJsDefault.default))(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+    rnds[6] = rnds[6] & 0x0f | 0x40;
+    rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+    if (buf) {
+        offset = offset || 0;
+        for(let i = 0; i < 16; ++i)buf[offset + i] = rnds[i];
+        return buf;
+    }
+    return (0, _stringifyJs.unsafeStringify)(rnds);
+}
+exports.default = v4;
+
+},{"./native.js":"lYayS","./rng.js":"2psyE","./stringify.js":"5Y9F1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lYayS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+const randomUUID = typeof crypto !== "undefined" && crypto.randomUUID && crypto.randomUUID.bind(crypto);
+exports.default = {
+    randomUUID
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2psyE":[function(require,module,exports) {
+// Unique ID creation requires a high quality random # generator. In the browser we therefore
+// require the crypto API and do not support built-in fallback to lower quality random number
+// generators (like Math.random()).
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>rng);
+let getRandomValues;
+const rnds8 = new Uint8Array(16);
+function rng() {
+    // lazy load so that environments that need to polyfill have a chance to do so
+    if (!getRandomValues) {
+        // getRandomValues needs to be invoked in a context where "this" is a Crypto implementation.
+        getRandomValues = typeof crypto !== "undefined" && crypto.getRandomValues && crypto.getRandomValues.bind(crypto);
+        if (!getRandomValues) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
+    }
+    return getRandomValues(rnds8);
+}
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Y9F1":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "unsafeStringify", ()=>unsafeStringify);
+var _validateJs = require("./validate.js");
+var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */ const byteToHex = [];
+for(let i = 0; i < 256; ++i)byteToHex.push((i + 0x100).toString(16).slice(1));
+function unsafeStringify(arr, offset = 0) {
+    // Note: Be careful editing this code!  It's been tuned for performance
+    // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+    return byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + "-" + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + "-" + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + "-" + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + "-" + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]];
+}
+function stringify(arr, offset = 0) {
+    const uuid = unsafeStringify(arr, offset); // Consistency check for valid UUID.  If this throws, it's likely due to one
+    // of the following:
+    // - One or more input array values don't map to a hex octet (leading to
+    // "undefined" in the uuid)
+    // - Invalid input values for the RFC `version` or `variant` fields
+    if (!(0, _validateJsDefault.default)(uuid)) throw TypeError("Stringified UUID is invalid");
+    return uuid;
+}
+exports.default = stringify;
+
+},{"./validate.js":"eHPgI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eHPgI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _regexJs = require("./regex.js");
+var _regexJsDefault = parcelHelpers.interopDefault(_regexJs);
+function validate(uuid) {
+    return typeof uuid === "string" && (0, _regexJsDefault.default).test(uuid);
+}
+exports.default = validate;
+
+},{"./regex.js":"bUa5g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bUa5g":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5M1Yq":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$26d6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$26d6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactFontawesome = require("@fortawesome/react-fontawesome");
+var _freeSolidSvgIcons = require("@fortawesome/free-solid-svg-icons");
+const Todo = ({ todo, toggleComplete, deleteTodo, editTodo })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "todo-item",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                onClick: ()=>toggleComplete(todo.id),
+                className: `${todo.completed ? "completed" : ""}`,
+                children: todo.task
+            }, void 0, false, {
+                fileName: "src/components/Todo.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "todo-actions",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                        className: "fas fa-edit",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                            icon: (0, _freeSolidSvgIcons.faEdit),
+                            onClick: ()=>editTodo(todo.id)
+                        }, void 0, false, {
+                            fileName: "src/components/Todo.jsx",
+                            lineNumber: 16,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Todo.jsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("i", {
+                        className: "fas fa-trash",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactFontawesome.FontAwesomeIcon), {
+                            icon: (0, _freeSolidSvgIcons.faTrash),
+                            onClick: ()=>deleteTodo(todo.id)
+                        }, void 0, false, {
+                            fileName: "src/components/Todo.jsx",
+                            lineNumber: 19,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/Todo.jsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Todo.jsx",
+                lineNumber: 14,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/Todo.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Todo;
+exports.default = Todo;
+var _c;
+$RefreshReg$(_c, "Todo");
+
+  $parcel$ReactRefreshHelpers$26d6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@fortawesome/react-fontawesome":"clIT3","@fortawesome/free-solid-svg-icons":"5lkdy","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"clIT3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FontAwesomeIcon", ()=>FontAwesomeIcon);
@@ -52865,126 +53204,11 @@ var icons = {
     faLevelUpAlt: faLevelUpAlt
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"55vIp":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$1582 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"adrsd":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$06a2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$1582.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _constants = require("../utils/constants");
-const TodoWrapper = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "todo-wrapper",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-            className: "img-logo",
-            src: (0, _constants.LOGO_URL)
-        }, void 0, false, {
-            fileName: "src/components/TodoWrapper.js",
-            lineNumber: 9,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/TodoWrapper.js",
-        lineNumber: 8,
-        columnNumber: 5
-    }, undefined);
-};
-_c = TodoWrapper;
-exports.default = TodoWrapper;
-var _c;
-$RefreshReg$(_c, "TodoWrapper");
-
-  $parcel$ReactRefreshHelpers$1582.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../utils/constants":"hB8jg"}],"hB8jg":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "LOGO_URL", ()=>LOGO_URL);
-const LOGO_URL = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwu-PoDKsazxzc3IUxcx17ZpOy0EARw7M60Q&s";
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hHUrP":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9ffe = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9ffe.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _todoForm = require("./TodoForm");
-var _todoFormDefault = parcelHelpers.interopDefault(_todoForm);
-var _uuid = require("uuid");
-var _todo = require("./Todo");
-var _todoDefault = parcelHelpers.interopDefault(_todo);
-var _s = $RefreshSig$();
-(0, _uuid.v4)();
-const Body = ()=>{
-    _s();
-    const [todos, setTodos] = (0, _react.useState)([]);
-    const addTodo = (todo)=>{
-        setTodos([
-            ...todos,
-            {
-                id: (0, _uuid.v4)(),
-                task: todo,
-                completed: false,
-                isEditing: false
-            }
-        ]);
-        console.log(todos);
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "body",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoFormDefault.default), {
-                addTodo: addTodo
-            }, void 0, false, {
-                fileName: "src/components/Body.jsx",
-                lineNumber: 21,
-                columnNumber: 7
-            }, undefined),
-            todos.map((todo, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _todoDefault.default), {
-                    task: todo.task
-                }, index, false, {
-                    fileName: "src/components/Body.jsx",
-                    lineNumber: 23,
-                    columnNumber: 9
-                }, undefined))
-        ]
-    }, void 0, true, {
-        fileName: "src/components/Body.jsx",
-        lineNumber: 20,
-        columnNumber: 5
-    }, undefined);
-};
-_s(Body, "ZATHeV9x55jFrDOww2hwcxQ3V1U=");
-_c = Body;
-exports.default = Body;
-var _c;
-$RefreshReg$(_c, "Body");
-
-  $parcel$ReactRefreshHelpers$9ffe.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./TodoForm":"irp8y","uuid":"j4KJi","./Todo":"5M1Yq"}],"irp8y":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$ab55 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$ab55.prelude(module);
+$parcel$ReactRefreshHelpers$06a2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -52993,12 +53217,12 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
-const TodoForm = ({ addTodo })=>{
+const TodoEditForm = ({ editTodo, task })=>{
     _s();
-    const [value, setValue] = (0, _react.useState)("");
+    const [value, setValue] = (0, _react.useState)(task.task);
     const handleSubmit = (e)=>{
         e.preventDefault();
-        addTodo(value);
+        editTodo(value, task.id);
         setValue("");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
@@ -53009,163 +53233,41 @@ const TodoForm = ({ addTodo })=>{
                 type: "text",
                 className: "todo-input",
                 value: value,
-                placeholder: "what is the task for today?",
-                onChange: (e)=>setValue(e.target.value)
+                placeholder: "Update task",
+                onChange: (e)=>setValue(e.target.value),
+                required: true
             }, void 0, false, {
-                fileName: "src/components/TodoForm.jsx",
+                fileName: "src/components/TodoEditForm.jsx",
                 lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 type: "submit",
                 className: "submit-btn",
-                children: "Add Task"
+                children: "Update"
             }, void 0, false, {
-                fileName: "src/components/TodoForm.jsx",
-                lineNumber: 22,
+                fileName: "src/components/TodoEditForm.jsx",
+                lineNumber: 23,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/TodoForm.jsx",
+        fileName: "src/components/TodoEditForm.jsx",
         lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
-_s(TodoForm, "dBtK6I2q1m3rcfzPBa0nrbv/iCI=");
-_c = TodoForm;
-exports.default = TodoForm;
+_s(TodoEditForm, "nG3EG0o99aGVU7LYFyipZY1IvMA=");
+_c = TodoEditForm;
+exports.default = TodoEditForm;
 var _c;
-$RefreshReg$(_c, "TodoForm");
+$RefreshReg$(_c, "TodoEditForm");
 
-  $parcel$ReactRefreshHelpers$ab55.postlude(module);
+  $parcel$ReactRefreshHelpers$06a2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"j4KJi":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "v1", ()=>(0, _v1JsDefault.default));
-parcelHelpers.export(exports, "v3", ()=>(0, _v3JsDefault.default));
-parcelHelpers.export(exports, "v4", ()=>(0, _v4JsDefault.default));
-parcelHelpers.export(exports, "v5", ()=>(0, _v5JsDefault.default));
-parcelHelpers.export(exports, "NIL", ()=>(0, _nilJsDefault.default));
-parcelHelpers.export(exports, "version", ()=>(0, _versionJsDefault.default));
-parcelHelpers.export(exports, "validate", ()=>(0, _validateJsDefault.default));
-parcelHelpers.export(exports, "stringify", ()=>(0, _stringifyJsDefault.default));
-parcelHelpers.export(exports, "parse", ()=>(0, _parseJsDefault.default));
-var _v1Js = require("./v1.js");
-var _v1JsDefault = parcelHelpers.interopDefault(_v1Js);
-var _v3Js = require("./v3.js");
-var _v3JsDefault = parcelHelpers.interopDefault(_v3Js);
-var _v4Js = require("./v4.js");
-var _v4JsDefault = parcelHelpers.interopDefault(_v4Js);
-var _v5Js = require("./v5.js");
-var _v5JsDefault = parcelHelpers.interopDefault(_v5Js);
-var _nilJs = require("./nil.js");
-var _nilJsDefault = parcelHelpers.interopDefault(_nilJs);
-var _versionJs = require("./version.js");
-var _versionJsDefault = parcelHelpers.interopDefault(_versionJs);
-var _validateJs = require("./validate.js");
-var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
-var _stringifyJs = require("./stringify.js");
-var _stringifyJsDefault = parcelHelpers.interopDefault(_stringifyJs);
-var _parseJs = require("./parse.js");
-var _parseJsDefault = parcelHelpers.interopDefault(_parseJs);
-
-},{"./v1.js":false,"./v3.js":false,"./v4.js":"8zJtu","./v5.js":false,"./nil.js":false,"./version.js":false,"./validate.js":false,"./stringify.js":false,"./parse.js":false,"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8zJtu":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _nativeJs = require("./native.js");
-var _nativeJsDefault = parcelHelpers.interopDefault(_nativeJs);
-var _rngJs = require("./rng.js");
-var _rngJsDefault = parcelHelpers.interopDefault(_rngJs);
-var _stringifyJs = require("./stringify.js");
-function v4(options, buf, offset) {
-    if ((0, _nativeJsDefault.default).randomUUID && !buf && !options) return (0, _nativeJsDefault.default).randomUUID();
-    options = options || {};
-    const rnds = options.random || (options.rng || (0, _rngJsDefault.default))(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-    rnds[6] = rnds[6] & 0x0f | 0x40;
-    rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
-    if (buf) {
-        offset = offset || 0;
-        for(let i = 0; i < 16; ++i)buf[offset + i] = rnds[i];
-        return buf;
-    }
-    return (0, _stringifyJs.unsafeStringify)(rnds);
-}
-exports.default = v4;
-
-},{"./native.js":"lYayS","./rng.js":"2psyE","./stringify.js":"5Y9F1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lYayS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-const randomUUID = typeof crypto !== "undefined" && crypto.randomUUID && crypto.randomUUID.bind(crypto);
-exports.default = {
-    randomUUID
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2psyE":[function(require,module,exports) {
-// Unique ID creation requires a high quality random # generator. In the browser we therefore
-// require the crypto API and do not support built-in fallback to lower quality random number
-// generators (like Math.random()).
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>rng);
-let getRandomValues;
-const rnds8 = new Uint8Array(16);
-function rng() {
-    // lazy load so that environments that need to polyfill have a chance to do so
-    if (!getRandomValues) {
-        // getRandomValues needs to be invoked in a context where "this" is a Crypto implementation.
-        getRandomValues = typeof crypto !== "undefined" && crypto.getRandomValues && crypto.getRandomValues.bind(crypto);
-        if (!getRandomValues) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
-    }
-    return getRandomValues(rnds8);
-}
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5Y9F1":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "unsafeStringify", ()=>unsafeStringify);
-var _validateJs = require("./validate.js");
-var _validateJsDefault = parcelHelpers.interopDefault(_validateJs);
-/**
- * Convert array of 16 byte values to UUID string format of the form:
- * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
- */ const byteToHex = [];
-for(let i = 0; i < 256; ++i)byteToHex.push((i + 0x100).toString(16).slice(1));
-function unsafeStringify(arr, offset = 0) {
-    // Note: Be careful editing this code!  It's been tuned for performance
-    // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
-    return byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + "-" + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + "-" + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + "-" + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + "-" + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]];
-}
-function stringify(arr, offset = 0) {
-    const uuid = unsafeStringify(arr, offset); // Consistency check for valid UUID.  If this throws, it's likely due to one
-    // of the following:
-    // - One or more input array values don't map to a hex octet (leading to
-    // "undefined" in the uuid)
-    // - Invalid input values for the RFC `version` or `variant` fields
-    if (!(0, _validateJsDefault.default)(uuid)) throw TypeError("Stringified UUID is invalid");
-    return uuid;
-}
-exports.default = stringify;
-
-},{"./validate.js":"eHPgI","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eHPgI":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _regexJs = require("./regex.js");
-var _regexJsDefault = parcelHelpers.interopDefault(_regexJs);
-function validate(uuid) {
-    return typeof uuid === "string" && (0, _regexJsDefault.default).test(uuid);
-}
-exports.default = validate;
-
-},{"./regex.js":"bUa5g","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bUa5g":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequire9ec0")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["gbXMy","1xC6H","bNKaB"], "bNKaB", "parcelRequire9ec0")
 
 //# sourceMappingURL=index.0641b553.js.map

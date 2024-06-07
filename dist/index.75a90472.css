@@ -64,6 +64,7 @@ body {
 }
 
 .todo-item {
+  cursor: pointer;
   background-color: #ea9a05;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -89,5 +90,10 @@ body {
 
 .todo-actions .fas:hover {
   color: #000;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }
 /*# sourceMappingURL=index.75a90472.css.map */

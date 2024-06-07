@@ -7,6 +7,7 @@ const TodoWrapper = () => {
   return (
     <div className='todo-wrapper'>
       <img className='img-logo' src={LOGO_URL} />
+     
     </div>
   )
 }

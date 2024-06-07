@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Todo from "./components/Todo";
+import TodoEditForm from "./components/TodoEditForm";
 import TodoWrapper from "./components/TodoWrapper";
 import Body from "./components/Body";
 
