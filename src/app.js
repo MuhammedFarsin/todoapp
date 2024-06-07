@@ -1,11 +1,19 @@
 import React from "react";
-import ReactDom from "react-dom/client"
+import ReactDOM from "react-dom/client";
+import Todo from "./components/Todo";
+import TodoWrapper from "./components/TodoWrapper";
+import Body from "./components/Body";
 
-const app = () => {
+const App = () => {
     return(
-        <div>
-            
+        <div className="App">
+            <TodoWrapper />
+            <Body />
         </div>
-    )
+    );
 }
 
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(<App />);
